@@ -1,0 +1,473 @@
+# *
+User-agent: *
+Allow: /
+
+# AugustBot
+User-agent: AugustBot
+Disallow: /
+
+# Barkrowler
+User-agent: Barkrowler
+Disallow: /
+
+# BLEXBot
+User-agent: BLEXBot
+Disallow: /
+
+# BUbiNG
+User-agent: BUbiNG
+Disallow: /
+
+# Bytespider
+User-agent: Bytespider
+Disallow: /
+
+# Claritybot
+User-agent: Claritybot
+Disallow: /
+
+# Clark-Crawler2
+User-agent: Clark-Crawler2
+Disallow: /
+
+# ContextAd
+User-agent: ContextAd
+Disallow: /
+
+# DataForSeoBot
+User-agent: DataForSeoBot
+Disallow: /
+
+# discobot
+User-agent: discobot
+Disallow: /
+
+# Exabot
+User-agent: Exabot
+Disallow: /
+
+# Ezooms
+User-agent: Ezooms
+Disallow: /
+
+# FunWebProducts
+User-agent: FunWebProducts
+Disallow: /
+
+# Gigabot
+User-agent: Gigabot
+Disallow: /
+
+# gomezagent
+User-agent: gomezagent
+Disallow: /
+
+# GomezAgent
+User-agent: GomezAgent
+Disallow: /
+
+# gomezagent+1.0
+User-agent: gomezagent+1.0
+Disallow: /
+
+# GomezAgent+1.0
+User-agent: GomezAgent+1.0
+Disallow: /
+
+# gomezagent+2.0
+User-agent: gomezagent+2.0
+Disallow: /
+
+# GomezAgent+2.0
+User-agent: GomezAgent+2.0
+Disallow: /
+
+# gomezagent+3.0
+User-agent: gomezagent+3.0
+Disallow: /
+
+# GomezAgent+3.0
+User-agent: GomezAgent+3.0
+Disallow: /
+
+# iisbot
+User-agent: iisbot
+Disallow: /
+
+# Linguee
+User-agent: Linguee
+Disallow: /
+
+# Linguee Bot
+User-agent: Linguee Bot
+Disallow: /
+
+# ltx71
+User-agent: ltx71
+Disallow: /
+
+# MLBot
+User-agent: MLBot
+Disallow: /
+
+# oBot
+User-agent: oBot
+Disallow: /
+
+# PetalBot
+User-agent: PetalBot
+Disallow: /
+
+# proximic
+User-agent: proximic
+Disallow: /
+
+# SearQuBot
+User-agent: SearQuBot
+Disallow: /
+
+# Seekport Crawler
+User-agent: Seekport Crawler
+Disallow: /
+
+# serpstatbot
+User-agent: serpstatbot
+Disallow: /
+
+# Seznam screenshot-generator
+User-agent: Seznam screenshot-generator
+Disallow: /
+
+# SeznamBot
+User-agent: SeznamBot
+Disallow: /
+
+# Snapbot
+User-agent: Snapbot
+Disallow: /
+
+# Sogou
+User-agent: Sogou
+Disallow: /
+
+# spbot
+User-agent: spbot
+Disallow: /
+
+# Speedy
+User-agent: Speedy
+Disallow: /
+
+# Spinn3r
+User-agent: Spinn3r
+Disallow: /
+
+# SuperPagesBot
+User-agent: SuperPagesBot
+Disallow: /
+
+# SuperPagesUrlVerifyBot
+User-agent: SuperPagesUrlVerifyBot
+Disallow: /
+
+# TSMbot
+User-agent: TSMbot
+Disallow: /
+
+# TwengaBot
+User-agent: TwengaBot
+Disallow: /
+
+# TwengaBot-Discover
+User-agent: TwengaBot-Discover
+Disallow: /
+
+# Uptimebot
+User-agent: Uptimebot
+Disallow: /
+
+# vebidoobot
+User-agent: vebidoobot
+Disallow: /
+
+# VoilaBot
+User-agent: VoilaBot
+Disallow: /
+
+# Y!J-BRW
+User-agent: Y!J-BRW
+Disallow: /
+
+# YaCy
+User-agent: YaCy
+Disallow: /
+
+# Yandex
+User-agent: Yandex
+Disallow: /
+
+# YandexBot
+User-agent: YandexBot
+Disallow: /
+
+# YandexFavicons
+User-agent: YandexFavicons
+Disallow: /
+
+# YandexImages
+User-agent: YandexImages
+Disallow: /
+
+# Yeti
+User-agent: Yeti
+Disallow: /
+
+# Yisouspider
+User-agent: Yisouspider
+Disallow: /
+
+# YodaoBot
+User-agent: YodaoBot
+Disallow: /
+
+# YoudaoBot
+User-agent: YoudaoBot
+Disallow: /
+
+# YPBot
+User-agent: YPBot
+Disallow: /
+
+# ZoomSpider
+User-agent: ZoomSpider
+Disallow: /
+
+# AugustBot
+User-agent: AugustBot
+Disallow: /
+
+# Applebot
+User-agent: Applebot
+Disallow: /
+
+# baiduspider
+User-agent: baiduspider
+Disallow: /
+
+# Barkrowler
+User-agent: Barkrowler
+Disallow: /
+
+# BLEXBot
+User-agent: BLEXBot
+Disallow: /
+
+# BUbiNG
+User-agent: BUbiNG
+Disallow: /
+
+# Claritybot
+User-agent: Claritybot
+Disallow: /
+
+# Clark-Crawler2
+User-agent: Clark-Crawler2
+Disallow: /
+
+# ContextAd
+User-agent: ContextAd
+Disallow: /
+
+# discobot
+User-agent: discobot
+Disallow: /
+
+# Exabot
+User-agent: Exabot
+Disallow: /
+
+# Ezooms
+User-agent: Ezooms
+Disallow: /
+
+# FunWebProducts
+User-agent: FunWebProducts
+Disallow: /
+
+# Gigabot
+User-agent: Gigabot
+Disallow: /
+
+# gomezagent
+User-agent: gomezagent
+Disallow: /
+
+# GomezAgent
+User-agent: GomezAgent
+Disallow: /
+
+# gomezagent+1.0
+User-agent: gomezagent+1.0
+Disallow: /
+
+# GomezAgent+1.0
+User-agent: GomezAgent+1.0
+Disallow: /
+
+# gomezagent+2.0
+User-agent: gomezagent+2.0
+Disallow: /
+
+# GomezAgent+2.0
+User-agent: GomezAgent+2.0
+Disallow: /
+
+# gomezagent+3.0
+User-agent: gomezagent+3.0
+Disallow: /
+
+# GomezAgent+3.0
+User-agent: GomezAgent+3.0
+Disallow: /
+
+# iisbot
+User-agent: iisbot
+Disallow: /
+
+# Linguee
+User-agent: Linguee
+Disallow: /
+
+# Linguee Bot
+User-agent: Linguee Bot
+Disallow: /
+
+# ltx71
+User-agent: ltx71
+Disallow: /
+
+# MLBot
+User-agent: MLBot
+Disallow: /
+
+# oBot
+User-agent: oBot
+Disallow: /
+
+# proximic
+User-agent: proximic
+Disallow: /
+
+# SearQuBot
+User-agent: SearQuBot
+Disallow: /
+
+# Seekport Crawler
+User-agent: Seekport Crawler
+Disallow: /
+
+# serpstatbot
+User-agent: serpstatbot
+Disallow: /
+
+# Seznam screenshot-generator
+User-agent: Seznam screenshot-generator
+Disallow: /
+
+# SeznamBot
+User-agent: SeznamBot
+Disallow: /
+
+# Snapbot
+User-agent: Snapbot
+Disallow: /
+
+# Sogou
+User-agent: Sogou
+Disallow: /
+
+# spbot
+User-agent: spbot
+Disallow: /
+
+# Speedy
+User-agent: Speedy
+Disallow: /
+
+# Spinn3r
+User-agent: Spinn3r
+Disallow: /
+
+# SuperPagesBot
+User-agent: SuperPagesBot
+Disallow: /
+
+# SuperPagesUrlVerifyBot
+User-agent: SuperPagesUrlVerifyBot
+Disallow: /
+
+# TwengaBot
+User-agent: TwengaBot
+Disallow: /
+
+# TwengaBot-Discover
+User-agent: TwengaBot-Discover
+Disallow: /
+
+# Uptimebot
+User-agent: Uptimebot
+Disallow: /
+
+# vebidoobot
+User-agent: vebidoobot
+Disallow: /
+
+# VoilaBot
+User-agent: VoilaBot
+Disallow: /
+
+# Y!J-BRW
+User-agent: Y!J-BRW
+Disallow: /
+
+# Yandex
+User-agent: Yandex
+Disallow: /
+
+# YandexBot
+User-agent: YandexBot
+Disallow: /
+
+# YandexFavicons
+User-agent: YandexFavicons
+Disallow: /
+
+# YandexImages
+User-agent: YandexImages
+Disallow: /
+
+# Yeti
+User-agent: Yeti
+Disallow: /
+
+# YodaoBot
+User-agent: YodaoBot
+Disallow: /
+
+# YoudaoBot
+User-agent: YoudaoBot
+Disallow: /
+
+# YPBot
+User-agent: YPBot
+Disallow: /
+
+# ZoomSpider
+User-agent: ZoomSpider
+Disallow: /
+
+# Host
+Host: https://v1.example.com
+
+# Sitemaps
+Sitemap: https://v1.example.com/sitemap.xml

@@ -1,0 +1,62 @@
+on:
+  push:
+    branches:
+      - main
+name: release-please
+jobs:
+  release-please:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: google-github-actions/release-please-action@v3
+        id: release
+        with:
+          release-type: simple
+          package-name: nextjs_ts_starter_app
+          command: github-release
+          changelog-types: '[{"type":"feat","section":"Features","hidden":false},{"type":"fix","section":"Bug Fixes","hidden":false},{"type":"chore","section":"Miscellaneous","hidden":false}]'
+      - uses: actions/checkout@v2
+      - name: tag major and minor versions
+        if: ${{ steps.release.outputs.release_created }}
+        run: |
+          git config user.name github-actions[bot]
+          git config user.email 41898282+github-actions[bot]@users.noreply.github.com
+          git remote add gh-token "https://${{ secrets.GITHUB_TOKEN }}@github.com/google-github-actions/release-please-action.git"
+          git tag -d v${{ steps.release.outputs.major }} || true
+          git tag -d v${{ steps.release.outputs.major }}.${{ steps.release.outputs.minor }} || true
+          git push origin :v${{ steps.release.outputs.major }} || true
+          git push origin :v${{ steps.release.outputs.major }}.${{ steps.release.outputs.minor }} || true
+          git tag -a v${{ steps.release.outputs.major }} -m "Release v${{ steps.release.outputs.major }}"
+          git tag -a v${{ steps.release.outputs.major }}.${{ steps.release.outputs.minor }} -m "Release v${{ steps.release.outputs.major }}.${{ steps.release.outputs.minor }}"
+          git push origin v${{ steps.release.outputs.major }}
+          git push origin v${{ steps.release.outputs.major }}.${{ steps.release.outputs.minor }}
+
+      # - uses: appleboy/ssh-action@v0.1.10
+      #   if: ${{ steps.release.outputs.release_created }}
+      #   with:
+      #     host: ${{ secrets.DEV_HOST }}
+      #     username: ${{ secrets.DEV_USERNAME }}
+      #     key: ${{ secrets.DEV_SSHKEY }}
+      #     script: |
+      #       cd /apps/nextjs_ts_starter_app
+      #       pm2 stop nextjs_ts_starter_app
+      #       echo "As we changing file during build we need to force reset"
+      #       git fetch --all
+      #       git reset --hard origin/main
+      #       git pull
+      #       sudo su
+      #       npm install
+      #       echo
+      #       sed -i 's/github_runId/${{github.run_id}}/g' /apps/nextjs_ts_starter_app/public/build.txt
+      #       sed -i 's/github_actorId/${{github.actor_id}}/g' /apps/nextjs_ts_starter_app/public/build.txt
+      #       sed -i 's/github_repositoryId/${{github.repository_id}}/g' /apps/nextjs_ts_starter_app/public/build.txt
+      #       sed -i 's/github_run_number/${{github.run_number}}/g' /apps/nextjs_ts_starter_app/public/build.txt
+      #       sed -i 's/github_actor/${{github.actor}}/g' /apps/nextjs_ts_starter_app/public/build.txt
+      #       sed -i 's/github_repository/${{github.repository}}/g' /apps/nextjs_ts_starter_app/public/build.txt
+      #       sed -i 's/BUILD_DATETIME/${BUILD_DATETIME}/g' /apps/nextjs_ts_starter_app/public/build.txt
+      #       echo "Build Date....: $(date "+%Y-%m-%d %H:%M %Z")" >> /apps/nextjs_ts_starter_app/public/build.txt
+      #       chmod 664 /apps/nextjs_ts_starter_app/public/build.txt
+      #       npm run build
+      #       exit
+      #       sudo chown -Rf ubuntu:ubuntu /apps/nextjs_ts_starter_app
+      #       pm2 restart nextjs_ts_starter_app --watch
+      #       pm2 save
