@@ -1,4 +1,4 @@
-# TODO 
+# TODO
 
 We are looking for someone to help us to fix GitHub Actions.
 We currently have NextJS project that few GitHub Actions
@@ -16,7 +16,6 @@ We currently have NextJS project that few GitHub Actions
 
 Lint has 4 steps: ESlint, TypeScript, Prettier, and Test.
 
-
 Issues:
 
 1. release-please.yml not bumping versions
@@ -24,8 +23,6 @@ Issues:
 2. when ticket open the create branch dont work
 
 3. CHANGES.md and version.txt not updated
-
-
 
 # Semantic Commit Messages
 
